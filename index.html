@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- animated css -->
+    <link rel="stylesheet" href="assets/files/animate.css" />
+
+    <style>
+      /*-------------------------------------------------- common css -----------------------------------*/
+      /* font css */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+      }
+      *,
+      *::before,
+      *::after,
+      p {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .intro_content h1 {
+        font-weight: 600;
+        border-left: 5px solid #ff3300;
+        padding-left: 15px;
+        color: #fff;
+        font-size: 65px;
+        margin-top: -13%;
+      }
+      /* intro content css */
+      .intro_bg {
+        background: url("./assets/files/intro_bg.jpg") rgb(0, 0, 0, 0.7);
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .intro_content {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo img {
+        width: 125px;
+      }
+
+      .contact_button a {
+        text-decoration: none;
+        color: #074c8d;
+        padding: 15px 25px;
+        background: transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 0.2s;
+        font-weight: 600;
+        border: 2px solid #074c8d;
+      }
+      .contact_button a:hover {
+        color: #fff;
+        background: #074c8d;
+      }
+      .about_pic img {
+        width: 80%;
+      }
+      .footer_logo img {
+        width: 15%;
+      }
+      .footer_logo {
+        display: flex;
+      }
+      footer p {
+        font-size: 14px !important;
+      }
+      /* monile view */
+      @media (max-width: 667px) {
+        .intro_content h1 {
+          padding-left: 10px;
+          font-size: 35px;
+        }
+        .intro_content h1 {
+          margin-top: 0%;
+        }
+        .contact_button {
+          text-align: center;
+        }
+        .logo img {
+          width: 120px;
+        }
+        .intro_content {
+          height: 90vh;
+        }
+        .about_sect {
+          padding-left: 10px;
+        }
+        .about_pic img {
+          width: 70%;
+        }
+        .extra-p p {
+          text-align: center !important;
+        }
+        .footer_logo {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="intro_bg">
+      <div class="intro_extra">
+        <div class="container">
+          <div class="logo wow bounceIn pt-4">
+            <img class="img-fluid" src="assets/files/Arch-logo.png" alt="" />
+          </div>
+          <div class="intro_content">
+            <h1 class="wow fadeInUp">
+              Innovate and elevate every <br />
+              aspect of our daily life
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------- about section ----------------------------------------->
+    <section>
+      <div class="about_sect my-md-4">
+        <div class="container">
+          <div class="row g-0 align-items-center pb-5">
+            <div class="col-md-5 offset-md-1">
+              <div class="about_pic text-center mt-4 wow fadeInLeft">
+                <!-- about pic -->
+                <img class="text-center img-fluid" src="assets/files/arch.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="about_content mt-4 wow fadeInRight">
+                <!-- about content -->
+                <p style="color: #7a7a7a">
+                  We are an e-commerce firm based out of Los Angeles, California. Our commitment is to bring innovation
+                  across multiple industries with our brands and design philosophy. We thoughtfully redesign solutions
+                  with an emphasis around simplicity, efficiency, and sustainability. Join us in reimagining and
+                  experiencing a whole new world.
+                </p>
+                <!-- button for contact us -->
+                <div class="contact_button mt-5">
+                  <a href="mailto: hello@archessbrands.com"
+                    ><i class="fa-solid fa-envelope-open-text me-2"></i>Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------ footer content ---------------------------->
+    <footer class="bg-dark pb-4 text-white wow fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer_logo pt-5">
+              <img src="assets/files/arch.png" alt="" />
+              <p class="ps-md-3 pt-2">
+                The torii gate traditionally symbolizes the transition from the everyday world to an elevated domain. To
+                us, it symbolizes the endless possibilities that can be unlocked in our daily lives.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center pt-5">
+            <div class="footer_content extra-p text-lg-end">
+              <p>Copyright © 2023 Arch Essentails | All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- animated js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/files/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
